@@ -7,3 +7,14 @@ spring:
   h2:
     console:
       enabled: true
+  jpa:
+    properties:
+      hibernate:
+        highlight_sql: true
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+        type.descriptor.sql: trace
+        orm.jdbc.bind: trace
